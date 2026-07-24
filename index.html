@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>twoblade // sharp hardware dispatch portal</title>
+    <script>
+        !function(b,e,t,r){
+            b[t]=b[t]||function(...args){(b[t].q=b[t].q||[]).push(args)};
+            b[t].l=+new Date;
+            var s=e.createElement('script'); s.async=1; s.crossOrigin='anonymous';
+            s.src='https://betterstack.net/b.js?t='+r;
+            (e.head||e.getElementsByTagName('head')[0]).appendChild(s);
+        }(window,document,'betterstack','sw5Shw4DKrp1ban89Ur3TRvX');
+        betterstack('init', { environment: 'production' });
+    </script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+        body {
+            background-color: #0b0d10; 
+            color: #a4b3c6;
+            font-family: 'Varela Round', Arial, Helvetica, sans-serif !important; 
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 85vh;
+        }
+
+        .twoblade-container {
+            background-color: #12161a; 
+            border: 2px solid #1f272f; 
+            border-radius: 32px; 
+            max-width: 540px;
+            width: 100%;
+            padding: 45px;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8);
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .terminal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #1f272f;
+            padding-bottom: 22px;
+            margin-bottom: 35px;
+        }
+
+        .protocol-tag {
+            color: #00f0ff; 
+            font-size: 13px;
+            letter-spacing: 2px;
+            font-weight: 700;
+        }
+
+        .status-dot {
+            width: 12px;
+            height: 12px;
+            background-color: #00f0ff; 
+            border-radius: 50%;
+            box-shadow: 0 0 12px #00f0ff;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 25px 0;
+            letter-spacing: -0.5px;
+            line-height: 1.3;
+        }
+
+        h1 span {
+            background: linear-gradient(135deg, #00f0ff 0%, #bd00ff 100%); 
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+
+        .delivery-details {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #94a3b8;
+            margin: 0 0 40px 0;
+            text-align: left;
+            background-color: #090b0e; 
+            border: 1px solid #1f272f;
+            border-radius: 20px; 
+            padding: 26px;
+        }
+
+        .detail-line {
+            margin: 12px 0;
+            font-size: 15px;
+        }
+
+        .detail-line strong {
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        .portal-link {
+            display: block;
+            background: linear-gradient(135deg, #00f0ff 0%, #bd00ff 100%); 
+            color: #ffffff;
+            text-decoration: none;
+            padding: 20px;
+            font-size: 17px;
+            font-weight: 700;
+            border-radius: 50px; 
+            letter-spacing: 0.5px;
+            box-shadow: 0 4px 20px rgba(189, 0, 255, 0.25);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .portal-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 30px rgba(0, 240, 255, 0.4);
+            cursor: pointer;
+        }
+
+        .dev-footer {
+            margin-top: 45px;
+            padding-top: 25px;
+            border-top: 2px solid #1f272f;
+            font-size: 13px;
+            color: #526071;
+            line-height: 1.6;
+            text-align: left;
+        }
+
+        .dev-footer strong {
+            color: #00f0ff;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="twoblade-container">
+        <div class="terminal-header">
+            <span class="protocol-tag">SHARP_LOGISTICS // COURIER_INTAKE</span>
+            <div class="status-dot"></div>
+        </div>
+
+        <h1>Physical Hardware Shipment:<br><span>128GB DDR5 6000 RAM</span></h1>
+        
+        <div class="delivery-details">
+            <div class="detail-line">Allocation Module: <strong>2x 64GB DDR5 Desktop Architecture</strong></div>
+            <div class="detail-line">Transit Courier: <strong>SHARP Global Routing Fleet</strong></div>
+            <div class="detail-line">Queue Manifest: <strong>Awaiting Destination Address Profile</strong></div>
+        </div>
+
+        <a href="https://ihateapps.netlify.app" target="_blank" class="portal-link">
+            Complete Delivery Form & Confirm Address
+        </a>
+
+        <div class="dev-footer">
+            <strong>SHIPPING DISCLAIMER:</strong> Look, obviously courier fleets cannot transport physical silicon sticks out of a code editor. This is 100 percent a joke and no mail truck is coming. But please click the link and sign up anyway. I worked incredibly hard building the interactive application that this link takes you to. I genuinely just want you to see my creation and check out the work I put in 😭
+        </div>
+    </div>
+
+</body>
+</html>
