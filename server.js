@@ -1,10 +1,8 @@
-const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-const server = http.createServer((req, res) => {
-    // Always serve the index.html file
-    const filePath = path.join(__dirname, 'index.html');
+module.exports = (req, res) => {
+    const filePath = path.join(process.cwd(), 'index.html');
     
     fs.readFile(filePath, (err, content) => {
         if (err) {
@@ -15,13 +13,4 @@ const server = http.createServer((req, res) => {
             res.end(content);
         }
     });
-});
-
-// Vercel assigns a dynamic port, fallback to 3000 for local testing
-const PORT = process.env.PORT || 3000;
-
-server.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-});
-
-module.exports = server;
+};
